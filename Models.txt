@@ -1,0 +1,83 @@
+Player		- first name
+		- last name
+		- mobile
+		- email
+		- username
+		- password
+		- avatar
+		- admin flag (site level admin)
+		- team manager flag (team admin)
+	- player can belong to many teams
+	- if admin flag true they can CRUD competitions and teams, approve new player registration, CRUD players
+	- if team manager flag true they can maintain team details (name, logo, messaging)
+	- needs authentication and authorisation
+	- use session to keep handle of user ID
+
+Team		- team name
+		- competition
+		- division
+		- team manager
+		- games played
+		- games won
+		- games drawn/tied
+		- games lost
+		- sets won
+		- sets lost
+		- points for
+		- points against
+		- sets %age
+		- points %age
+		- competition points
+	- team can belong to many competitions
+	
+Competition	- competition name
+		- divisions
+		- points %age flag (record points %age)
+		- sets %age (record sets %age)
+		- MVP flag (record MVP points)
+	- competition has many teams
+	- competition has many persons
+	- competition displays ladders by division, sorted ascending by competition points/sets %age/points %age (depending on option selected)
+	- if MVP option is selected, MVP is recorded against each match
+
+
+
+Match		- round no
+		- round date
+		- team 1
+		- team 2
+		- court
+		- game time
+		- team 1 points
+		- team 2 points
+		- team 1 sets
+		- team 2 sets
+		- MVP
+		- team 1 fees
+		- team 2 fees
+	- match belongs to one draw
+	- match has many sets
+
+Set		- team 1 points
+		- team 2 points
+		- winner
+	- set belongs to match
+
+
+
+Login screen	- traditional with ID, password, sign in and Register links
+		- successful sign-in will open person dashboard
+		- unsuccessful login will return error and prompt for registration
+
+Player dashboard	- shows profile details (can be edited)
+			- shows list of teams they belong to
+			- under each team shows match history, draw, link to team page
+			- shows competition ladder
+
+Team page	- shows team details, including logo/images/
+		- shows contact details for all players
+		- show match history, draw, ladder
+		- shows chat/micropost window for inter-team comms
+		- broadcast message functionality?
+
+
