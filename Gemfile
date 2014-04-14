@@ -14,6 +14,7 @@ gem 'gumby-rails'
 gem 'bcrypt-ruby', '3.1.2'
 gem 'simple_form'
 gem 'devise'
+gem 'rails_layout'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -41,6 +42,7 @@ group :development, :test do
   gem 'shoulda-matchers'
   gem 'debugger'
   gem 'better_errors'
+  gem 'quiet_assets'
 end
 
 group :test do

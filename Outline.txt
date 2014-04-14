@@ -1,9 +1,9 @@
 TO DO
 
 1.	Create user model
-	a) define validations: user name, first name, last name, email, password all mandatory.
-	b) define validations: unique username, unique email address
-	c) set up model tests
+	DONE	a) define validations: user name, first name, last name, email, password all mandatory.
+	DONE	b) define validations: unique username, unique email address
+	DONE	c) set up model tests
 	d) set up controller tests
 2.	Set up user registration form
 	a) set up feature tests
