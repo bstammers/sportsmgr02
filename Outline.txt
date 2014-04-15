@@ -5,13 +5,13 @@ TO DO
 	DONE	b) define validations: unique username, unique email address
 	DONE	c) set up model tests
 	DONE	d) set up controller tests
-2.	Set up user registration form
+2.	Define authentication process.
+	a) use Devise
+3.	Set up user registration form
 	a) set up feature tests
 	b) create form
-3.	Define authentication process.
-	a) use Devise
-	b) set up sign in page
-  	c) define feature tests for sign in success and failure
+	c) set up sign in page
+  	d) define feature tests for sign in success and failure
 4.	Set up user dashboard view, including user profile section
 	a) add link to user profile
 5.	Set up user profile display.
