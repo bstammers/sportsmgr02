@@ -1,6 +1,7 @@
-module ApplicationHelper
+module Features
+  module SessionHelpers
   
-      def sign_up_with(first, last, name, email, password)
+    def sign_up_with(first, last, name, email, password)
       @user = FactoryGirl.build(:user, first_name: first, last_name: last, username: name, email: email, password: password, password_confirmation: password)
       visit sign_up_path
       fill_in 'First name', with: @user.first_name
@@ -19,4 +20,5 @@ module ApplicationHelper
       click_button 'Sign in'
     end
 
+  end
 end

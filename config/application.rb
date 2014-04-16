@@ -24,6 +24,7 @@ module Sportsmgr02
       g.fixture_replacement :factory_girl, dir: 'spec/factories'
       g.view_specs false
       g.helper_specs false
+      g.routing_specs false
       g.controller_specs true
       g.request_specs true
       g.stylesheets = false

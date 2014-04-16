@@ -10,29 +10,12 @@ FactoryGirl.define do
     avatar ""
     admin false
     manager false
+    password "password"
+    password_confirmation "password"
   end
   
-  factory :second_user do
-    first_name "John"
-    last_name "Black"
-    username "jblack"
-    email "john.black@test.com"
-    phone "0455 555555"
-    avatar ""
-    admin false
-    manager false
-  end
-  
-  factory :invalid_user, parent: :user do
+   factory :invalid_user, parent: :user do
     username nil
   end
-  
-  factory :admin_user, parent: :user do
-    admin true
-  end
-  
-  factory :manager_user, parent: :user do
-    manager true
-  end
-    
+
 end
