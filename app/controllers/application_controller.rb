@@ -9,5 +9,16 @@ class ApplicationController < ActionController::Base
     def configure_permitted_parameters
       devise_parameter_sanitizer.for(:sign_up) { |u| u.permit(:first_name, :last_name, :username, :email, :password, :password_confirmation, :remember_me, :phone, :avatar, :admin, :manager)}
       devise_parameter_sanitizer.for(:sign_in) { |u| u.permit(:username, :email, :password, :remember_me)}
+      devise_parameter_sanitizer.for(:account_update) { |u| u.permit(:first_name, :last_name, :username, :email, :password, :password_confirmation, :remember_me, :phone, :avatar, :admin, :manager, :current_password)}
+    end
+
+  private
+    def after_sign_in_path_for(resource)
+      if resource.admin == true
+        admin_path
+      else
+        dashboard_path
+      end
+      
     end
 end

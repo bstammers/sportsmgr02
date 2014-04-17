@@ -10,6 +10,7 @@
     <%= f.input :email, required: true %>
   	<%= f.input :phone %>
   	<%= f.input :avatar %>
+  	<%= f.input :admin %>
   	<%= f.input :manager %>
 
     <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>

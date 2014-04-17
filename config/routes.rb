@@ -6,7 +6,12 @@ Sportsmgr02::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-   root 'devise/sessions#create'
+  devise_scope :user do
+    root 'devise/sessions#new'
+  end
+  
+  match '/dashboard', to: "users#show", via: 'get' 
+  match '/admin', to: "users#administration", via: 'get' 
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

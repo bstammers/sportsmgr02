@@ -1,0 +1,7 @@
+Users:
+	a)	Sign in/Sign up/Edit Profile page formatting.
+		- resize field width
+	b)	Add correct layout to dashboard
+	
+Admin page:
+	a) user jQuery dialogues to create new comps, divs, teams & players?
