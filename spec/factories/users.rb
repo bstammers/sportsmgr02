@@ -14,6 +14,15 @@ FactoryGirl.define do
     password_confirmation "password"
   end
   
+  factory :admin_user, parent: :user do
+    first_name "Joe"
+    last_name "Bloggs"
+    username "jbloggs"
+    email "joe.bloggs@test.com"
+    admin true
+    manager true
+  end
+  
    factory :invalid_user, parent: :user do
     username nil
   end

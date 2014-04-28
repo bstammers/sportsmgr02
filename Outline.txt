@@ -27,7 +27,7 @@ TO DO
 	a) add link to user profile
 6.	Set up user profile display.
 7.	Create competition model
-	a) Set up model tests
+	DONE	a) Set up model tests
 	b) Set up controller tests
 	c) set up feature tests
 8.	Create division model

@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Comp name:</strong>
+  <%= @competition.comp_name %>
+</p>
+
+<p>
+  <strong>Points flag:</strong>
+  <%= @competition.points_flag %>
+</p>
+
+<p>
+  <strong>Sets flag:</strong>
+  <%= @competition.sets_flag %>
+</p>
+
+<p>
+  <strong>Mvp flag:</strong>
+  <%= @competition.mvp_flag %>
+</p>
+
+<%= link_to 'Edit', edit_competition_path(@competition) %> |
+<%= link_to 'Back', competitions_path %>
