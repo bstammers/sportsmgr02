@@ -1,4 +1,6 @@
 Sportsmgr02::Application.routes.draw do
+  resources :divisions
+
   resources :competitions
 
   devise_for :users

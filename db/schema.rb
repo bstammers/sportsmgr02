@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140428050901) do
+ActiveRecord::Schema.define(version: 20140429061231) do
 
   create_table "competitions", force: true do |t|
     t.string   "comp_name"
@@ -23,6 +23,14 @@ ActiveRecord::Schema.define(version: 20140428050901) do
   end
 
   add_index "competitions", ["comp_name"], name: "index_competitions_on_comp_name", unique: true
+
+  create_table "divisions", force: true do |t|
+    t.string   "division_name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "divisions", ["division_name"], name: "index_divisions_on_division_name", unique: true
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false

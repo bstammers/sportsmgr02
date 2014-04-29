@@ -14,46 +14,47 @@ TO DO
   	DONE	c) define feature tests for sign in success and failure
   	DONE	d) test sign up and sign in in browser to confirm
   	DONE	e) re-direct admin user to Admin page and normal user to dashboard
-4.	Set up System Admin page
-	a) set up section for competitions
-	b) clicking on competition will display details
-	c) add button to create new competition
-	d) add new division via Ajax link...just add division name
-	e) set up section for players
-	f) link to add new player...(function to email login details and change password?)
-	g) assign player to team
-	h) list of unassociated players
-5.	Set up user dashboard view, including user profile section
-	a) add link to user profile
-6.	Set up user profile display.
-7.	Create competition model
+4.	Create competition model
 	DONE	a) Set up model tests
-	b) Set up controller tests
-	c) set up feature tests
-8.	Create division model
-	a) Set up model tests
-	b) Set up controller tests
+	SOME NOT WORKING - BROWSER TEST WORKS	b) Set up controller tests
+	EDIT NOT WORKING - ROUTING NOT WORKING - BROWSER TEST WORKS	c) set up feature tests
+5.	Create division model
+	DONE	a) Set up model tests
+	SOME NOT WORKING - BROWSER TEST WORKS	b) Set up controller tests
+	EDIT NOT WORKING - ROUTING NOT WORKING - BROWSER TEST WORKS	c) set up feature tests
 	c) adjust competition feature tests
 	c) set up associations with competition
-9.	Create team model
+6.	Create team model
 	a) Set up model tests
 	b) Set up controller tests
 	c) Set up associations with division and competition
-
-10.	Set up display/edit forms
+7.	Set up associations
+	a) Link competition to division
+	b) Link division to team
+	c) Link team to user
+	
+8.	Set up display/edit forms
 	a) competition form
 	b) allow divisions to be added within competition form
 	c) team form
 	d) work out how to select created divisions from combo box in team to assign
 	e) work out how to select created teams from combo box in player to assign
 	
-11.	Set up Admin page
-	a) link to login page (if admin flag open page)
-	b) add competition list
-	c) link to add new competition
-	d) in competition, link to add new divisions
+9.	Set up System Admin page
+	a) set up section for competitions
+	b) clicking on competition will display details
+	c) add button to create new competition
+	d) add new division via Ajax link...just add division name
 	e) clicking on competition from list will drill down and display divisions with list of teams - link to create new team
 	f) clicking on team in division list will open team details and list stats & players
 	g) show list of unaffiliated players - have ability to link them to team
 	h) show message window - ability to broadcast to all team in comp/division, specific team, team managers only
+	i) set up section for players
+	j) link to add new player...(function to email login details and change password?)
+	k) assign player to team
+	l) list of unassociated players
+10.	Set up user dashboard view, including user profile section
+	a) add link to user profile
+11.	Set up user profile display.
+
 
